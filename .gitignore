@@ -41,3 +41,5 @@ luac.out
 
 #packaged mods
 *.zip
+
+.vscode
