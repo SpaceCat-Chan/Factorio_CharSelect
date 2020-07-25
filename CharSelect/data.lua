@@ -1,0 +1,1 @@
+require("prototypes.girl_character_animations")
