@@ -1058,7 +1058,7 @@ data:extend(
 {
   {
     type = "character-corpse",
-    name = "hideboar-corpse",
+    name = "hideboar-skin-corpse",
     icon = "__CharSelect__/CharacterAssets/GearGirl/character.png",
     icon_size = 64, icon_mipmaps = 4,
     minable = {mining_time = 2},
@@ -1106,7 +1106,7 @@ data:extend(
   },
   {
     type = "character",
-    name = "hideboar",
+    name = "hideboar-skin",
     icon = "__CharSelect__/CharacterAssets/GearGirl/character.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-off-grid", "breaths-air", "not-repairable", "not-on-map", "not-flammable"},
@@ -1119,7 +1119,7 @@ data:extend(
     sticker_box = {{-0.2, -1}, {0.2, 0}},
     crafting_categories = {"crafting"},
     mining_categories = {"basic-solid"},
-    character_corpse = "hideboar-corpse",
+    character_corpse = "hideboar-skin-corpse",
     inventory_size = 80,
     build_distance = 10,
     drop_item_distance = 10,
