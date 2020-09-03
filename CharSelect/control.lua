@@ -26,6 +26,9 @@ end
 
 function CopyPlayer(LuaPlayer, NewCharacterName)
 	if LuaPlayer.character and LuaPlayer.character.valid then
+		if remote.interfaces["minime"] then
+			remote.call("minime", "make_character_backup", LuaPlayer)
+		end
 		local Position = LuaPlayer.character.position
 		local Surface = LuaPlayer.surface
 		local Force = LuaPlayer.force
@@ -56,6 +59,9 @@ function CopyPlayer(LuaPlayer, NewCharacterName)
 		LuaPlayer.character.insert(OldCharacter.cursor_stack)
 		CopyLogistics(OldCharacter, LuaPlayer)
 		OldCharacter.destroy({raise_destroy = true})
+		if remote.interfaces["minime"] then
+			remote.call("minime", "player_changed_character", LuaPlayer)
+		end
 	end
 end
 
