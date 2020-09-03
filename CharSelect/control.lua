@@ -34,7 +34,7 @@ function CopyPlayer(LuaPlayer, NewCharacterName)
 		local Force = LuaPlayer.force
 
 		local OldCharacter = LuaPlayer.character
-		LuaPlayer.character = Surface.create_entity({name = NewCharacterName, position = Position, force = Force, fast_replace = true, raise_create = true})
+		LuaPlayer.character = Surface.create_entity({name = NewCharacterName, position = Position, force = Force, fast_replace = true, raise_built = true})
 		if OldCharacter.is_flashlight_enabled() then
 			LuaPlayer.character.enable_flashlight()
 		else
